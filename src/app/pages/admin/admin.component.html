@@ -1,0 +1,29 @@
+  <mat-sidenav #sidenav mode="side">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard">
+        <mat-icon>dashboard</mat-icon>
+        <span matLine>Dashboard</span>
+      </a>
+      <a mat-list-item routerLink="/client-list">
+        <mat-icon>account_circle</mat-icon>
+        <span matLine>Users</span>
+      </a>
+      <a mat-list-item routerLink="/orders-list">
+        <mat-icon>achat_circle</mat-icon>
+        <span matLine>Orders</span>
+      </a>
+      <a mat-list-item routerLink="/product-list">
+        <mat-icon>product_circle</mat-icon>
+        <span matLine>Product</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <span>Admin Dashboard</span>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+  </mat-sidenav-content>

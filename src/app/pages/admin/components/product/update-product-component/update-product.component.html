@@ -1,0 +1,43 @@
+<div class="div-container">
+    <h1>Modifier un client</h1> </div>
+<div class="div-container">
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>Ref</mat-label>
+      <input matInput [(ngModel)]="newProductData.ref" #input  placeholder="ref" required>
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>title</mat-label>
+      <input matInput [(ngModel)]="newProductData.title" #input  placeholder="title" required>
+    </mat-form-field>
+  
+  </div>
+
+<div class="div-container">
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>type</mat-label>
+      <input matInput [(ngModel)]="newProductData.type" #input  placeholder="type" required>
+    </mat-form-field>
+
+    <mat-form-field floatLabel="always">
+      <mat-label>Price</mat-label>
+      <input matInput type="number"  [(ngModel)]="newProductData.price" class="example-right-align" placeholder="0">
+      <span matTextPrefix>$&nbsp;</span>
+      <span matTextSuffix>.00</span>
+    </mat-form-field>
+  
+  </div>
+
+<div class="div-container">
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>Descripion</mat-label>
+      <input matInput [(ngModel)]="newProductData.desc" #input  placeholder="description" required>
+    </mat-form-field>
+
+  </div>
+<div class="div-container flex-row-reverse">
+    <button mat-flat-button (click)="submitUpdateData()" color="primary">Modifier</button>
+    <button mat-button (click)="closePopup()" color="primary">Annuler</button>
+
+  </div>
+  

@@ -1,0 +1,41 @@
+<div class="div-container">
+    <h1>Ajouter un client</h1> </div>
+<div class="div-container">
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>Nom</mat-label>
+      <input matInput [(ngModel)]="newClientData.nom" #input  placeholder="Nom" required>
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>Prenom</mat-label>
+      <input matInput [(ngModel)]="newClientData.prenom" #input  placeholder="Prenom" required>
+    </mat-form-field>
+  
+  </div>
+
+<div class="div-container">
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>Adresse</mat-label>
+      <input matInput [(ngModel)]="newClientData.adresse" #input  placeholder="Adresse" required>
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>Numero Telephone</mat-label>
+      <input type="tel" [(ngModel)]="newClientData.numTel" matInput #input maxlength="10" placeholder="NºTele" required>
+    </mat-form-field>
+  
+  </div>
+
+<div class="div-container">
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>Ville</mat-label>
+      <input matInput [(ngModel)]="newClientData.ville" #input  placeholder="" required>
+    </mat-form-field>
+
+  </div>
+<div class="div-container flex-row-reverse">
+    <button mat-flat-button (click)="submitNewData()" color="primary">Ajouter</button>
+    <button mat-button (click)="closePopup()" color="primary">Annuler</button>
+
+  </div>
+  

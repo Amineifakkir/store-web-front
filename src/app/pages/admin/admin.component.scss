@@ -1,0 +1,37 @@
+/* Center table horizontally within card content */
+.mat-card-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Ensure full width for the table */
+ 
+  table mat-table {
+    width: 100%;
+  
+    th mat-header-cell, td mat-cell {
+      /* Define width for each column class (replace with your class names) */
+      &.width-column-table {
+        width: 200px; /* Adjust as needed */
+      }
+    }
+  }
+
+  table mat-table td mat-cell,
+table mat-table th mat-header-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+th.mat-header-cell{
+    width: 200px;
+}
+.icon-with-background {
+  background-color: green;
+  color: white;
+  border-radius: 50%; /* Optional for rounded corners */
+  margin-left: 1400px;
+}
+  
+  
